@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Hintergrundanimation */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 20% 20%,rgba(0,150,255,.15),transparent 25%),
+    radial-gradient(circle at 80% 30%,rgba(140,0,255,.12),transparent 25%),
+    radial-gradient(circle at 50% 80%,rgba(0,255,180,.10),transparent 30%);
+    animation:bgMove 15s linear infinite alternate;
+    z-index:-1;
+}
+
+@keyframes bgMove{
+
+from{
+transform:scale(1) translateY(0px);
+}
+
+to{
+transform:scale(1.15) translateY(-40px);
+}
+
+}
+
+/* Login */
+
+#login{
+
+width:360px;
+max-width:90%;
+margin:80px auto;
+
+background:rgba(20,20,30,.85);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 0
