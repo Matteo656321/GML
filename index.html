@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Countdown</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Passwort -->
+
+<div id="login">
+
+    <h1>🔒 Private Seite</h1>
+
+    <p>Passwort eingeben</p>
+
+    <input
+        id="password"
+        type="password"
+        placeholder="Passwort">
+
+    <br><br>
+
+    <button onclick="login()">
+        Öffnen
+    </button>
+
+    <p id="error"></p>
+
+</div>
+
+
+
+
+
+<!-- Hauptseite -->
+
+<div id="app" style="display:none;">
+
+<header>
+
+<h1>❤️ Countdown bis sie zurückkommt ❤️</h1>
+
+<div id="countdown">
+Lädt...
+</div>
+
+<div id="xpBox">
+
+⭐ Level
+<span id="level">1</span>
+
+<br>
+
+XP:
+<span id="xp">0</span>
+
+</div>
+
+</header>
+
+
+
+
+<nav>
+
+<button onclick="showPage('home')">
+🏠 Home
+</button>
+
+<button onclick="showPage('games')">
+🎮 Spiele
+</button>
+
+<button onclick="showPage('quests')">
+🎯 Sidequests
+</button>
+
+<button onclick="showPage('gallery')">
+🖼️ Galerie
+</button>
+
+<button onclick="showPage('shooter')">
+🔫 Shooter
+</button>
+
+</nav>
+
+
+
+
+<main>
+
+<section id="home">
+
+<h2>Willkommen 👋</h2>
+
+<p>
+
+Jeder Tag bringt dich näher zum
+17. Juli 2026.
+
+</p>
+
+</section>
+
+
+
+
+<section id="games" class="page">
+
+<h2>🎮 Spiele</h2>
+
+<p>Hier kommen später:</p>
+
+<ul>
+
+<li>🐍 Snake</li>
+
+<li>🧠 Memory</li>
+
+<li>⚡ Reaktion</li>
+
+<li>🏓 Pong</li>
+
+<li>⭕ Tic Tac Toe</li>
+
+<li>🎯 Klickspiel</li>
+
+</ul>
+
+</section>
+
+
+
+
+
+<section id="quests" class="page">
+
+<h2>🎯 Sidequests</h2>
+
+<ul>
+
+<li>☐ 50 Punkte sammeln</li>
+
+<li>☐ 3 Spiele spielen</li>
+
+<li>☐ Überraschung öffnen</li>
+
+<li>☐ Einen Tag geschafft</li>
+
+</ul>
+
+</section>
+
+
+
+
+
+<section id="gallery" class="page">
+
+<h2>🖼️ Dinge die du magst</h2>
+
+<div class="gallery">
+
+<img src="images/minecraft.jpg">
+
+<img src="images/cs2.jpg">
+
+<img src="images/raspberrypi.jpg">
+
+<img src="images/segway.jpg">
+
+</div>
+
+</
